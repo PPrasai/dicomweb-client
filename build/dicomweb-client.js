@@ -1107,7 +1107,7 @@
         debugLog("retrieve metadata of series ".concat(options.seriesInstanceUID));
         var url = "".concat(this.wadoURL, "/studies/").concat(options.studyInstanceUID, "/series/").concat(options.seriesInstanceUID, "/metadata");
         var request = getRequestOptions(options.request);
-        return this._httpGetApplicationJson(url, {}, false, request.withCredentials);
+        return this._httpGetApplicationJson(url, {}, false, request);
       }
       /**
        * Searches for DICOM Instances.
